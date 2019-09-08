@@ -725,3 +725,7 @@ func hideMenuItem(item *MenuItem) {
 func showMenuItem(item *MenuItem) {
 	addOrUpdateMenuItem(item)
 }
+
+func SystrayHWND() syscall.Handle {
+	return wt.window
+}
